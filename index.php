@@ -1,8 +1,8 @@
 <?php
 
-define('BASE_URL', '/comem-archidep-php-todo-exercise/');
+define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
 define('DB_USER', 'todolist');
-define('DB_PASS', 'ArchiDep2020.');
+define('DB_PASS', getenv('TODOLIST_DB_PASS'));
 define('DB_NAME', 'todolist');
 define('DB_HOST', '127.0.0.1');
 define('DB_PORT', '3306');
